@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include"debuglogger.h"
+#include "classrobot.h"
 namespace Ui {
 class MainWindow;
 }
@@ -14,15 +15,15 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    classrobot robot ;
+
 
 
 private:
     Ui::MainWindow *ui;
     QStringListModel *m_stringListModel;
-    static void messageHandler(QtMsgType type, const QMessageLogContext &context, const QString &msg);
 
 private slots:
-    void handleMessage(QtMsgType type, const QMessageLogContext &context, const QString &msg);
 
 };
 

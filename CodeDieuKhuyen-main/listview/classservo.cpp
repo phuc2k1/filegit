@@ -18,7 +18,7 @@ void classservo::setangle(int angle)
     if(angle>180){angle=180;}
     uint32_t intension=5+ (angle/9);
     softPwmWrite (SERVO_PIN, intension);
-    qDebug()<<"Success Set Servo "<<a<<"="<<angle;
+
 }
 int classservo::getangle(){
     return angle;

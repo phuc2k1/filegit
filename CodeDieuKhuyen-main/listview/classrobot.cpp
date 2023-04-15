@@ -3,12 +3,12 @@
 
 classrobot::classrobot()
 {
-    servo1= new servo1(SERVO_PIN);
-    servo2= new servo2(SERVO_PIN_1);
-    servo3= new servo3(SERVO_PIN_2);
-    servo4= new servo4(SERVO_PIN_3);
-    servo5= new servo5(SERVO_PIN_4);
-    qDebug<<"Success INIT robot";
+    servo1= new classservo(SERVO_PIN);
+    servo2= new classservo(SERVO_PIN_1);
+    servo3= new classservo(SERVO_PIN_2);
+    servo4= new classservo(SERVO_PIN_3);
+    servo5= new classservo(SERVO_PIN_4);
+    qDebug()<<"Success INIT robot";
 
 
 
@@ -17,19 +17,25 @@ void classrobot::settrangthai(int a){
     switch(a){
     case 1:{
         settrangthai1();
+        qDebug()<<"Location 1";
+
         break;
     }
     case 2:
         settrangthai2();
+        qDebug()<<"Location 2";
         break;
     case 3:
         settrangthai3();
+        qDebug()<<"Location 3";
         break;
     case 4:
         settrangthai4();
+        qDebug()<<"Location 4";
         break;
     case 5:
         settrangthai5();
+        qDebug()<<"Location 5";
         break;
     }
 
