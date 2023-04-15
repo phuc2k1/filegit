@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(debugLogger, &DebugLogger::logAdded, [=]() {
         ui->listView->setModel(debugLogger->model());
     });
-
+//loi
 
 
 
