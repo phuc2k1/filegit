@@ -28,13 +28,18 @@ SOURCES += \
         mainwindow.cpp \
     debuglogger.cpp \
     classservo.cpp \
-    classrobot.cpp
+    classrobot.cpp \
+    readdata.cpp
 
 HEADERS += \
         mainwindow.h \
     debuglogger.h \
     classservo.h \
-    classrobot.h
+    classrobot.h \
+    readdata.h
 
 FORMS += \
         mainwindow.ui
+
+DISTFILES += \
+    data.txt

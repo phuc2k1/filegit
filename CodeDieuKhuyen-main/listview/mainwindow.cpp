@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
         ui->listView->setModel(debugLogger->model());
     });
     robot.settrangthai(1);
-//loi
+
 
 
 
