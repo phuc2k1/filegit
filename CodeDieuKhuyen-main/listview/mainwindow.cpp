@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
     DebugLogger* debugLogger = new DebugLogger(this);
     connect(debugLogger, &DebugLogger::logAdded, [=]() {
         ui->listView->setModel(debugLogger->model());
+        ui->listView->setModel(debugLogger->model());
     });
 //loi
 
